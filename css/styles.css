@@ -434,4 +434,122 @@ button {
     }
 
 /* #endregion */
+
+/* #region featur */
+
+.section-title {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0px;
+    border: 0px;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.featur {
+    padding: 96px 0;
+}
+
+.featur-list {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 72px;
+}
+
+
+.border-icon {
+    display: none;
     
+}
+
+
+.featur-subtitle {
+    text-align: center;
+    margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.25;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+}
+
+.featur-text {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    .featur-list {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 24px;
+        }
+
+
+        .featur-item {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            background: #fff;
+            width: calc((100% - 24px) / 2);
+        }
+
+}
+
+
+@media screen and (min-width: 1158px) {
+
+    .featur {
+            padding: 120px 0;
+        }
+
+    .featur-list {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+        }
+    
+    
+        .border-icon {
+            display: flex;
+            border: 1px solid #8e8f99;
+            border-radius: 4px;
+            width: 264px;
+            height: 112px;
+            background: #f4f4fd;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+    
+    
+        .featur-item {
+            width: calc((100% - 72px) / 4);
+        }
+    
+        .featur-subtitle {
+            font-weight: 500;
+            font-size: 20px;
+            line-height: 1.2;
+            letter-spacing: 0.02em;
+        }
+    
+        .featur-text {
+            font-weight: 400;
+        }
+
+}
+
+
+/* #endregion */
