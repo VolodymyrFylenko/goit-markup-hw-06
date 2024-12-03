@@ -852,9 +852,6 @@ button {
     background-color: #31d0aa;
 }
 
-.footer-subscribe {
-    margin-left: auto;
-}
 
 .subscribe {
     display: flex;
@@ -941,18 +938,26 @@ button {
         padding-bottom: 100px;
     }
 
-    .footer-content {
-        margin-right: 120px;
-    }
 
         .footer-flex {
+            display: flex;
+            flex-direction: row;
             align-items: baseline;
-            gap: 0;
+
         }
 
         .subscribe {
+            display: flex;
+            gap: 24px;
+        }
+
+
+        .footer-subscribe {
             margin-left: auto;
         }
 }
 
+/* #endregion */
+
+/* #region backdrop */
 /* #endregion */
