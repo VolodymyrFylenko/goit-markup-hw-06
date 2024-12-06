@@ -132,7 +132,7 @@
               <img
                 class="team-img"
                 src="./images/team-1.jpg"
-                srcset="./images/team-1.jpg 288w, ./images/team-1@2x.jpg 576w"
+                srcset="./images/team-1.jpg 1x, ./images/team-1@2x.jpg 2x"
                 alt="team-1"
                 width="264"
                 height="260"
@@ -176,7 +176,7 @@
               <img
                 class="team-img"
                 src="./images/team-2.jpg"
-                srcset="./images/team-2.jpg 288w, ./images/team-2@2x.jpg 576w"
+                srcset="./images/team-2.jpg 1x, ./images/team-2@2x.jpg 2x"
                 alt="team-2"
                 width="264"
                 height="260"
@@ -220,7 +220,7 @@
               <img
                 class="team-img"
                 src="./images/team-3.jpg"
-                srcset="./images/team-3.jpg 288w, ./images/team-3@2x.jpg 576w"
+                srcset="./images/team-3.jpg 1x, ./images/team-3@2x.jpg 2x"
                 alt="team-3"
                 width="264"
                 height="260"
@@ -264,7 +264,7 @@
               <img
                 class="team-img"
                 src="./images/team-4.jpg"
-                srcset="./images/team-4.jpg 288w, ./images/team-4@2x.jpg 576w"
+                srcset="./images/team-4.jpg 1x, ./images/team-4@2x.jpg 2x"
                 alt="team-4"
                 width="264"
                 height="260"
@@ -314,21 +314,36 @@
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-photo">
-                <img
-                  class="portfolio-img"
-                  src="./images/portfolio-1-desk.jpg"
-                  srcset="
-                    ./images/port-1-mob@1x.jpg       288w,
-                    ./images/portfolio-1-mob@2x.jpg  576w,
-                    ./images/port-1-tablet@1x.jpg    288w,
-                    ./images/port-1-tablet@2x.jpg    576w,
-                    ./images/portfolio-1-desk@1x.jpg 288w,
-                    ./images/port-1-desk@2x.jpg      576w
-                  "
-                  alt="portfolio-1-desk"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio-1-desk@1x.jpg 1x,
+                      ./images/port-1-desk@2x.jpg      2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/port-1-tablet@1x.jpg 1x,
+                      ./images/port-1-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/port-1-mob@1x.jpg      1x,
+                      ./images/portfolio-1-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="portfolio-img"
+                    src="./images/portfolio-1-desk.jpg"
+                    alt="portfolio-1-desk"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -342,21 +357,36 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-photo">
-                <img
-                  class="portfolio-img"
-                  src="./images/portfolio-2-desk.jpg"
-                  srcset="
-                    ./images/port-2-mob@1x.jpg       288w,
-                    ./images/portfolio-2-mob@2x.jpg  576w,
-                    ./images/port-2-tablet@1x.jpg    288w,
-                    ./images/port-2-tablet@2x.jpg    576w,
-                    ./images/portfolio-2-desk@1x.jpg 288w,
-                    ./images/port-2-desk@2x.jpg      576w
-                  "
-                  alt="portfolio-2-desk"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio-2-desk@1x.jpg 1x,
+                      ./images/port-2-desk@2x.jpg      2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/port-2-tablet@1x.jpg 1x,
+                      ./images/port-2-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/port-2-mob@1x.jpg      1x,
+                      ./images/portfolio-2-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="portfolio-img"
+                    src="./images/portfolio-2-desk.jpg"
+                    alt="portfolio-2-desk"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -370,21 +400,36 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-photo">
-                <img
-                  class="portfolio-img"
-                  src="./images/portfolio-3-desk.jpg"
-                  srcset="
-                    ./images/port-3-mob@1x.jpg       288w,
-                    ./images/portfolio-3-mob@2x.jpg  576w,
-                    ./images/port-3-tablet@1x.jpg    288w,
-                    ./images/port-3-tablet@2x.jpg    576w,
-                    ./images/portfolio-3-desk@1x.jpg 288w,
-                    ./images/port-3-desk@2x.jpg      576w
-                  "
-                  alt="portfolio-3-desk"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio-3-desk@1x.jpg 1x,
+                      ./images/port-3-desk@2x.jpg      2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/port-3-tablet@1x.jpg 1x,
+                      ./images/port-3-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/port-3-mob@1x.jpg      1x,
+                      ./images/portfolio-3-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="portfolio-img"
+                    src="./images/portfolio-3-desk.jpg"
+                    alt="portfolio-3-desk"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -398,21 +443,36 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-photo">
-                <img
-                  class="portfolio-img"
-                  src="./images/portfolio-4-desk.jpg"
-                  srcset="
-                    ./images/port-4-mob@1x.jpg       288w,
-                    ./images/portfolio-4-mob@2x.jpg  576w,
-                    ./images/port-4-tablet@1x.jpg    288w,
-                    ./images/port-4-tablet@2x.jpg    576w,
-                    ./images/portfolio-4-desk@1x.jpg 288w,
-                    ./images/port-4-desk@2x.jpg      576w
-                  "
-                  alt="portfolio-4-desk"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio-4-desk@1x.jpg 1x,
+                      ./images/port-4-desk@2x.jpg      2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/port-4-tablet@1x.jpg 1x,
+                      ./images/port-4-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/port-4-mob@1x.jpg      1x,
+                      ./images/portfolio-4-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="portfolio-img"
+                    src="./images/portfolio-4-desk.jpg"
+                    alt="portfolio-4-desk"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -426,21 +486,36 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-photo">
-                <img
-                  class="portfolio-img"
-                  src="./images/portfolio-5-desk.jpg"
-                  srcset="
-                    ./images/port-5-mob@1x.jpg       288w,
-                    ./images/portfolio-5-mob@2x.jpg  576w,
-                    ./images/port-5-tablet@1x.jpg    288w,
-                    ./images/port-5-tablet@2x.jpg    576w,
-                    ./images/portfolio-5-desk@1x.jpg 288w,
-                    ./images/port-5-desk@2x.jpg      576w
-                  "
-                  alt="portfolio-5-desk"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio-5-desk@1x.jpg 1x,
+                      ./images/port-5-desk@2x.jpg      2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/port-5-tablet@1x.jpg 1x,
+                      ./images/port-5-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/port-5-mob@1x.jpg      1x,
+                      ./images/portfolio-5-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="portfolio-img"
+                    src="./images/portfolio-5-desk.jpg"
+                    alt="portfolio-5-desk"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -454,21 +529,36 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-photo">
-                <img
-                  class="portfolio-img"
-                  src="./images/portfolio-6-desk.jpg"
-                  srcset="
-                    ./images/port-6-mob@1x.jpg       288w,
-                    ./images/portfolio-6-mob@2x.jpg  576w,
-                    ./images/port-6-tablet@1x.jpg    288w,
-                    ./images/port-6-tablet@2x.jpg    576w,
-                    ./images/portfolio-6-desk@1x.jpg 288w,
-                    ./images/port-6-desk@2x.jpg      576w
-                  "
-                  alt="portfolio-6-desk"
-                  width="360"
-                  height="300"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1158px)"
+                    srcset="
+                      ./images/portfolio-6-desk@1x.jpg 1x,
+                      ./images/port-6-desk@2x.jpg      2x
+                    "
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/port-6-tablet@1x.jpg 1x,
+                      ./images/port-6-tablet@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/port-6-mob@1x.jpg      1x,
+                      ./images/portfolio-6-mob@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    class="portfolio-img"
+                    src="./images/portfolio-6-desk.jpg"
+                    alt="portfolio-6-desk"
+                    width="360"
+                    height="300"
+                  />
+                </picture>
                 <p class="hidden-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
@@ -682,26 +772,26 @@
           <ul class="social-media-mobile">
             <li class="social-media-icon-mobile">
               <a class="social-media-link-mobile" href="">
-                <svg class="" width="24" height="24">
+                <svg class="soc-icon-mobile" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-media-icon-mobile">
               <a class="social-media-link-mobile" href="">
-                <svg class="" width="24" height="24">
+                <svg class="soc-icon-mobile" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a> </li
             ><li class="social-media-icon-mobile">
               <a class="social-media-link-mobile" href="">
-                <svg class="" width="24" height="24">
+                <svg class="soc-icon-mobile" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a> </li
             ><li class="social-media-icon-mobile">
               <a class="social-media-link-mobile" href="">
-                <svg class="" width="24" height="24">
+                <svg class="soc-icon-mobile" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
